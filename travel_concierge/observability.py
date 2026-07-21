@@ -10,6 +10,9 @@ logger = logging.getLogger("travel_concierge")
 class ObservabilityPlugin(BasePlugin):
     """Plugin for logging agent events, model execution latency, and tool invocations."""
 
+    def __init__(self, name: str = "observability"):
+        super().__init__(name=name)
+
     async def before_model_callback(self, *, callback_context, llm_request):
         """Logs outgoing model requests."""
         logger.info(f"[LLM Request] Agent: {callback_context.agent_name} | Model: {llm_request.model}")

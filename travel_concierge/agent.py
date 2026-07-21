@@ -51,5 +51,5 @@ root_agent = Agent(
 app = App(
     name="travel_concierge",
     root_agent=root_agent,
-    plugins=[ObservabilityPlugin()],
+    plugins=[ObservabilityPlugin(name="observability")],
 )
