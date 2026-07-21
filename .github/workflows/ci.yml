@@ -7,7 +7,7 @@ on:
     branches: [ main ]
 
 jobs:
-  test:
+  test-and-eval:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -24,4 +24,8 @@ jobs:
 
       - name: Run Unit Tests
         run: |
-          pytest
+          PYTHONPATH=. pytest tests/test_*.py
+
+      - name: Run Evaluation Regression Suite
+        run: |
+          PYTHONPATH=. pytest tests/eval/
