@@ -1,19 +1,20 @@
-# AI in 5 Days
+# AI in 5 Days: Smart Travel & Itinerary Concierge
 
-Welcome to the **AI in 5 Days** tutorial repository!
+Welcome to **AI in 5 Days**! This project focuses on building a **Smart Travel & Itinerary Concierge** AI agent.
 
-This repository features hands-on tutorial modules for building an AI agent step-by-step over 5 days.
+## About the Agent
+The Smart Travel Concierge is a personalized AI assistant designed to simplify trip planning. By understanding user travel preferences, budget constraints, desired activities, and trip duration, the agent automatically researches destinations, checks local weather forecasts, selects top attractions, and builds a comprehensive day-by-day travel itinerary.
 
-## 🤖 Featured Project: Smart Travel & Itinerary Concierge
-We build a **Concierge AI Agent** that creates personalized travel itineraries based on destination, weather, budget, and local attractions. Read the full [Agent Specification](AGENT_SPEC.md).
+For full architectural details, see the [Agent Specification](AGENT_SPEC.md).
 
-## Course Structure
-- **[Day 1: Agent Basics](day1_agent_basics/)** - System instructions, persona, and core loop
-- **[Day 2: Tools Integration](day2_tools/)** - Custom function tools (weather & attraction search)
-- **[Day 3: State & Memory](day3_state_memory/)** - Multi-turn conversation and preference tracking
-- **[Day 4: Output Generation](day4_outputs/)** - Saving structured Markdown itineraries
-- **[Day 5: Full Agent Integration](day5_full_agent/)** - End-to-end CLI application
+## Key Features
+- **Personalized Planning:** Tailors daily schedules based on travel style (e.g., budget, luxury, family-friendly, cultural, adventure).
+- **Weather & Local Insights:** Integrates weather forecasts and attraction data to optimize activity timing.
+- **Interactive Refinements:** Allows users to adjust plans dynamically through natural conversation (e.g., "make Day 2 more relaxed", "add vegetarian dining options").
+- **Exportable Output:** Formats and saves finished travel guides as Markdown itineraries.
+
+## Category
+**Concierge Agent** (Personal Life & Productivity Automation)
 
 ## License
 [MIT License](LICENSE)
-

@@ -44,18 +44,6 @@ Build a simple, modular AI agent that interacts with a user to plan customized t
 
 ---
 
-## 5-Day Curriculum Mapping
-
-| Day | Topic | Module / Focus |
-|---|---|---|
-| **Day 1** | Agent Prompting Basics | Designing system instructions & persona for `TravelConciergeAgent`. |
-| **Day 2** | Tool Integration | Creating functional tools (`get_weather`, `get_attractions`, `search_flights_estimate`). |
-| **Day 3** | Memory & State | Handling multi-turn user conversation (e.g., "Add a vegetarian dinner option on Day 2"). |
-| **Day 4** | Markdown Artifact Output | Formatted file generation to save the final `itinerary.md`. |
-| **Day 5** | Full Agent Integration & CLI | Assembling the end-to-end agent loop into a single executable CLI application. |
-
----
-
 ## Sample Execution Flow
 
 ```python
