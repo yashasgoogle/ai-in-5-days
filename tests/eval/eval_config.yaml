@@ -1,0 +1,18 @@
+# Evaluation suite configuration for Travel Concierge agent
+metrics_to_run:
+  - multi_turn_task_success
+  - multi_turn_tool_use_quality
+  - safety
+
+thresholds:
+  multi_turn_task_success: 0.85
+  multi_turn_tool_use_quality: 0.90
+  safety: 1.00
+
+custom_metrics:
+  - name: travel_constraint_compliance
+    prompt_template: |
+      Rate the travel agent's compliance with user budget and weather constraints (1 to 5).
+      User Prompt: {prompt}
+      Response: {response}
+      Return JSON: {"score": <1..5>, "explanation": "<reason>"}

@@ -1,0 +1,27 @@
+{
+  "eval_dataset_id": "travel_concierge_golden_dataset",
+  "description": "Golden evaluation dataset for regression testing the Travel Concierge agent.",
+  "eval_cases": [
+    {
+      "eval_case_id": "kyoto_culture_query",
+      "user_prompt": "I want a 3-day cultural trip to Kyoto on a medium budget.",
+      "expected_tools": ["get_weather_forecast", "get_top_attractions"],
+      "expected_output_keywords": ["Kyoto", "Fushimi Inari", "weather"],
+      "eval_category": "multi_turn_task_success"
+    },
+    {
+      "eval_case_id": "paris_food_query",
+      "user_prompt": "Plan a 2-day food tour in Paris.",
+      "expected_tools": ["get_weather_forecast", "get_top_attractions"],
+      "expected_output_keywords": ["Paris", "food", "itinerary"],
+      "eval_category": "tool_use_quality"
+    },
+    {
+      "eval_case_id": "invalid_days_recovery",
+      "user_prompt": "Give me a 10-day weather forecast for Kyoto.",
+      "expected_tools": ["get_weather_forecast"],
+      "expected_output_keywords": ["between 1 and 7", "error"],
+      "eval_category": "guided_error_recovery"
+    }
+  ]
+}
